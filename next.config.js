@@ -1,8 +1,7 @@
-const withMDX = require('@next/mdx')({
-    extension: /\.mdx?$/
-})
+const withMdxEnhanced = require('next-mdx-enhanced')
 
-module.exports = withMDX({
-    pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx']
-})
-  
+module.exports = withMdxEnhanced({
+  layoutPath: 'layouts',
+  defaultLayout: true,
+  fileExtensions: ['mdx'],
+})()

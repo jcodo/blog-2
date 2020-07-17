@@ -1,11 +1,9 @@
 import '../css/index.css'
-import Container from '../components/container'
+import { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Container>
-      <Component {...pageProps} />
-    </Container>
+    <Component {...pageProps} />
   )
 }
 
