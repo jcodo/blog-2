@@ -1,3 +1,4 @@
+// @ts-ignore
 import { frontMatter as posts } from '../pages/**/*.mdx'
 import Preview from './preview'
 
