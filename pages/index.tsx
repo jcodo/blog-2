@@ -11,7 +11,7 @@ export default function Index() {
       <Head>
         <title>Jesse Sibley's Blog</title>
       </Head>
-      <header className="max-w-2xl mx-auto px-4 mt-16 mb-8 text-center">
+      <header className="max-w-2xl mx-auto px-4 pt-16 mb-8 text-center">
         <img src="" />
         <h1 className="title font-black text-4xl tracking-tight">
           Hey, I'm Jesse
@@ -24,13 +24,13 @@ export default function Index() {
             interested in building and marketing digital products and exploring
             creativity in software ✨
           </p>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-inside mb-4">
             <li>
               <a
                 href="https://twitter.com/jessethesibley"
                 rel="noopener"
-                target="_blank"
                 className="underline"
+                tabIndex={0}
               >
                 Twitter
               </a>
@@ -46,6 +46,12 @@ export default function Index() {
               </a>
             </li>
           </ul>
+          <p>
+            Here's some buzzwords I like to throw around a lot:{' '}
+            <strong>JAMStack</strong>, <strong>Serverless</strong>,{' '}
+            <strong>Friendship</strong>, <strong>SaaS</strong>,{' '}
+            <strong>Digitally Minded</strong>.
+          </p>
         </article>
         <article className="mb-8">
           <h3 className="font-bold text-2xl">Recent Articles</h3>

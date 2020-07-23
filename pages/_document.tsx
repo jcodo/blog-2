@@ -20,8 +20,10 @@ class MyDocument extends Document {
           <meta name="og:description" content="Jesse Sibley's Blog" />
         </Head>
         <body>
-          <Main />
-          <NextScript />
+          <div className="bg-white min-h-screen">
+            <Main />
+            <NextScript />
+          </div>
         </body>
       </Html>
     )

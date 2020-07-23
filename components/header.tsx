@@ -21,7 +21,7 @@ const links = [
 
 export default function Header() {
   return (
-    <nav className="max-w-2xl mx-auto p-4 mt-8">
+    <nav className="max-w-2xl mx-auto p-4 pt-8">
       <div className="flex items-center justify-between">
         <Link href="/">
           <a className="flex-shrink-0 w-12 h-12 bg-gray-200 rounded-full"></a>

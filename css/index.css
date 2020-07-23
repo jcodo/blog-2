@@ -3,9 +3,10 @@
 
 /** custom styles **/
 
-html {
-  --lighter: #00d2ff;
-  --base: #007cf0;
+body {
+  margin: 0;
+  padding: 0;
+  @apply bg-green-500;
 }
 
 h1,
