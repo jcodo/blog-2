@@ -4,12 +4,7 @@ import Anchor from '../components/anchor'
 const links = [
   {
     href: '/',
-    label: 'Home',
-    external: false,
-  },
-  {
-    href: '/blog',
-    label: 'Blog',
+    label: 'About',
     external: false,
   },
   {
@@ -24,10 +19,10 @@ const links = [
   },
 ]
 
-export default function Nav() {
+export default function Header() {
   return (
-    <nav className="container mx-auto px-4">
-      <div className="py-8 border-b border-gray-200 flex items-center justify-between">
+    <nav className="max-w-2xl mx-auto p-4 mt-8">
+      <div className="flex items-center justify-between">
         <Link href="/">
           <a className="flex-shrink-0 w-12 h-12 bg-gray-200 rounded-full"></a>
         </Link>

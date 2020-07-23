@@ -8,14 +8,6 @@ html {
   --base: #007cf0;
 }
 
-.title {
-  background: var(--base);
-  background: linear-gradient(90deg, var(--lighter) 0%, var(--base) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 h1,
 h2,
 h3,
