@@ -1,9 +1,31 @@
+import Head from 'next/head'
 import Header from '../components/header'
 import Subscribe from '../components/subscribe'
+import { getSlugFromPath } from '../lib/get-posts'
 
-export default function Layout(frontMatter) {
+interface PostFrontMatter {
+  title: string
+  description: string
+  published: string
+  __resourcePath: string
+}
+
+export default function Layout(frontMatter: PostFrontMatter) {
   return ({ children: content }) => (
     <>
+      <Head>
+        <meta name="twitter:title" content={frontMatter.title} />
+        <meta name="twitter:description" content={frontMatter.description} />
+        <meta
+          name="og:url"
+          content={`https://jessesibley.com/${getSlugFromPath(
+            frontMatter.__resourcePath
+          )}`}
+        />
+        <meta name="og:type" content="article" />
+        <meta name="og:title" content={frontMatter.title} />
+        <meta name="og:description" content={frontMatter.description} />
+      </Head>
       <Header />
       <article className="px-4 container sm:max-w-2xl mx-auto mt-8">
         <header>

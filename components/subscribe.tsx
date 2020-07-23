@@ -1,9 +1,7 @@
 export default function Subscribe() {
   return (
-    <section className="rounded p-4 bg-gray-100 -mx-4">
-      <h2 className="font-bold text-2xl mb-2 text-gray-800">
-        Email Newsletter
-      </h2>
+    <section>
+      <h2 className="font-bold text-2xl mb-2 text-gray-800">Newsletter</h2>
       <p className="text-gray-700 mb-4">
         I'll let you know when I write another blog post and maybe keep you up
         to date with other interesting things I do online.
@@ -16,21 +14,21 @@ export default function Subscribe() {
           window.open('https://buttondown.email/jessesibley', 'popupwindow')
         }}
       >
-        <label>
+        <div className="w-full space-y-4">
           <input
             type="email"
             name="email"
             placeholder="Your email"
-            className="mb-4 px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white rounded border outline-none focus:outline-none focus:shadow-outline w-full"
+            className="block w-full px-3 py-2 placeholder-gray-400 text-gray-700 relative bg-white rounded border outline-none focus:outline-none focus:shadow-outline"
           />
-        </label>
-        <input type="hidden" value="1" name="embed" />
-        <input
-          type="submit"
-          value="Subscribe"
-          className="mb-2 w-full bg-green-500 text-gray-800 active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded cursor-pointer outline-none focus:shadow-outline mr-1"
-        />
-        <p className="text-sm text-gray-600">
+          <input type="hidden" value="1" name="embed" />
+          <input
+            type="submit"
+            value="Subscribe"
+            className="block w-full bg-green-500 text-gray-800 active:bg-green-600 border-2 border-green-500 font-bold uppercase text-sm px-6 py-2 rounded cursor-pointer outline-none focus:shadow-outline"
+          />
+        </div>
+        <p className="text-sm mt-4 text-gray-500">
           <a href="https://buttondown.email" target="_blank">
             Powered by Buttondown.
           </a>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Jesse Sibley's Blog]]></title>
+        <description><![CDATA[Jesse Sibley's Blog]]></description>
+        <link>https://jessesibley.com</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Thu, 23 Jul 2020 15:45:55 GMT</lastBuildDate>
+        <atom:link href="https://blog.tailwindcss.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[JAMStack Isn't about Developer Experience]]></title>
+            <link>https://jessesibley.com/jamstack-isnt-about-developer-experience</link>
+            <guid isPermaLink="false">jamstack-isnt-about-developer-experience</guid>
+            <pubDate>Fri, 19 Jun 2020 23:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

@@ -9,7 +9,16 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <meta name="twitter:site" content="@jessethesibley" />
+          <meta name="twitter:creator" content="@jessethesibley" />
+          <meta name="twitter:title" content="Jesse Sibley's Blog" />
+          <meta name="twitter:description" content="Jesse Sibley's Blog" />
+          <meta name="og:url" content="https://jessesibley.com" />
+          <meta name="og:type" content="article" />
+          <meta name="og:title" content="Jesse Sibley's Blog" />
+          <meta name="og:description" content="Jesse Sibley's Blog" />
+        </Head>
         <body>
           <Main />
           <NextScript />

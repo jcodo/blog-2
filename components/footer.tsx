@@ -5,7 +5,7 @@ interface Link {
 
 const links: Link[] = [
   {
-    href: '/rss.xml',
+    href: '/feed.xml',
     label: 'RSS',
   },
   {

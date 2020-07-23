@@ -17,20 +17,20 @@ export default function Index() {
           Hey, I'm Jesse
         </h1>
       </header>
-      <main className="max-w-2xl mx-auto px-4">
-        <article className="prose prose-lg mb-8">
-          <p>
+      <main className="max-w-2xl mx-auto px-4 text-gray-800 leading-loose">
+        <article className="text-lg mb-8">
+          <p className="mb-4">
             I'm a <b>Full Stack Developer</b> based in <b>London, UK</b>. I'm
             interested in building and marketing digital products and exploring
             creativity in software ✨
           </p>
-          <p>You can find me on...</p>
-          <ul>
+          <ul className="list-disc list-inside">
             <li>
               <a
                 href="https://twitter.com/jessethesibley"
                 rel="noopener"
                 target="_blank"
+                className="underline"
               >
                 Twitter
               </a>
@@ -40,19 +40,20 @@ export default function Index() {
                 href="https://github.com/chickencoder"
                 rel="noopener"
                 target="_blank"
+                className="underline"
               >
                 GitHub
               </a>
             </li>
           </ul>
         </article>
-        <article className="prose prose-lg mb-16">
-          <h3>Recent Articles</h3>
-          <ul>
+        <article className="mb-8">
+          <h3 className="font-bold text-2xl">Recent Articles</h3>
+          <ul className="list-disc list-inside underline text-lg">
             {posts.map((post, index) => (
               <li key={index}>
                 <Link href={post.href}>
-                  <a>{post.title}</a>
+                  <a className="underline">{post.title}</a>
                 </Link>
               </li>
             ))}
