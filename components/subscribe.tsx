@@ -25,7 +25,7 @@ export default function Subscribe() {
           <input
             type="submit"
             value="Subscribe"
-            className="block w-full text-white bg-pinkyred-500 active:bg-pinkyred-600 border-2 border-pinkyred-500 font-bold uppercase text-sm px-6 py-2 rounded cursor-pointer outline-none focus:shadow-outline"
+            className="block w-full text-white bg-pinkyred active:bg-pinkyred border-2 border-pinkyred font-bold uppercase text-sm px-6 py-2 rounded cursor-pointer outline-none focus:shadow-outline"
           />
         </div>
         <p className="text-sm mt-4 text-gray-500">

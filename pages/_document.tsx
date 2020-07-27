@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta name="twitter:site" content="@jessethesibley" />
           <meta name="twitter:creator" content="@jessethesibley" />
@@ -20,7 +20,7 @@ class MyDocument extends Document {
           <meta name="og:description" content="Jesse Sibley's Blog" />
         </Head>
         <body>
-          <div className="bg-white min-h-screen">
+          <div>
             <Main />
             <NextScript />
           </div>
