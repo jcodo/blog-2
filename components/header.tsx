@@ -26,6 +26,7 @@ export default function Header() {
         <Link href="/">
           <a className="flex-shrink-0 w-16 h-16 bg-gray-200 rounded-full">
             <img
+              alt="A picture of me"
               className="w-16 rounded-full"
               src={require('../public/avatar.jpg?resize&size=280')}
             />

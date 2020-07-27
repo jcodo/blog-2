@@ -14,6 +14,7 @@ export default function Index() {
       <header className="max-w-2xl mx-auto px-4 pt-16 mb-8 flex flex-col sm:flex-row items-center space-y-8 space-x-0 sm:space-y-0 sm:space-x-8">
         <aside className="flex-shrink-0">
           <img
+            alt="A picture of me"
             className="w-40 sm:w-48 rounded-full mx-auto"
             src={require('../public/avatar.jpg?resize&size=280')}
           />

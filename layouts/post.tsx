@@ -29,7 +29,7 @@ export default function Layout(frontMatter: PostFrontMatter) {
       <Header />
       <article className="px-4 container sm:max-w-2xl mx-auto mt-8">
         <header>
-          <h1 className="font-black text-3xl md:text-4xl mb-4">
+          <h1 className="font-black text-3xl md:text-4xl mb-2">
             {frontMatter.title}
           </h1>
           <p className="flex items-center text-gray-600 mb-8">
