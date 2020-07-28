@@ -25,11 +25,12 @@ export default function Layout(frontMatter: PostFrontMatter) {
         <meta name="og:type" content="article" />
         <meta name="og:title" content={frontMatter.title} />
         <meta name="og:description" content={frontMatter.description} />
+        <meta name="description" content={frontMatter.description} />
       </Head>
       <Header />
       <article className="px-4 container sm:max-w-2xl mx-auto mt-8">
         <header>
-          <h1 className="font-black text-3xl md:text-4xl mb-2">
+          <h1 className="font-black text-4xl md:text-4xl mb-2">
             {frontMatter.title}
           </h1>
           <p className="flex items-center text-gray-600 mb-8">

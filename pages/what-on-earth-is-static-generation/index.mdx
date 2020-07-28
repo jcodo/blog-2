@@ -1,0 +1,41 @@
+---
+title: What on Earth Is Static Regneration?
+published: 27 July, 2020
+layout: post
+---
+
+[Vercel](https://vercel.com) announced [Next.js 9.5](https://nextjs.org/blog/next-9-5) today which gave us **'Stable Incremental Static Regeneration'**. But, _what on earth is that?_
+
+If you're not familiar, **Static Generation** is the process of dynamically generating pages at build time. For example, an e-commerce website might generate a static HTML page for each product in their catalog as oppose to the traditional approach of using a server to load in product information from a database.
+
+This is nice because static HTML files are fast to serve. Additionally, static HTML can be easily served from a global CDN, resulting is quick page loads wherever you are in the world.
+
+This technique also causes less load for databases and servers, making it a much cheaper option.
+
+The major drawback of traditional static generation however, is that if a small change is made to a single page, the entire site must be rebuilt and redeployed. For a site with thousands of articles or products, this could take a long time.
+
+## Incremental Static Generation
+
+To address this issue, the Next.js contributors have been working on giving static pages the ability to be "revalidated" at runtime.
+
+In practise, this works with the `revalidate` option in the `getStaticProps()` method of a Next.js page. The `revalidate` option, if specified, will instruct the page to be regenerated at a given interval.
+
+When a user visits an "out of date" page, they will be served up a "stale" version. Traffic on the site will then cause the page to be re-rendered in the background meaning that the next users to visit the page will see the latest, "up to date" version.
+
+## It gets better...
+
+Instead of having to define all pages at build time and then incrementally rebuilding them at runtime, you can now [register new static pages at _runtime_](https://nextjs.org/blog/next-9-5#stable-incremental-static-regeneration).
+
+This is like automatic server-side rendering but once rendered, pages are served statically and can then also be updated on demand.
+
+Here's a [demo with an explanation](https://static-tweet.now.sh/) if you don't believe me...
+
+2020 _really is_ a crazy year.
+
+## Big Wins
+
+In my opinion, this approach to static generation is a defining moment for [JAMStack](https://jamstack.org) which could make it far more adoptable than before.
+
+You just can't beat the speed of pure HTML.
+
+If you can build complex dynamic sites with the simplicity of a tool like [Next.js](https://nextjs.org) why use anything else?

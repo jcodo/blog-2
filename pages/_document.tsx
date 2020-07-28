@@ -10,6 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta name="description" content="Jesse Sibley's Blog" />
           <meta name="twitter:site" content="@jessethesibley" />
           <meta name="twitter:creator" content="@jessethesibley" />
           <meta name="twitter:title" content="Jesse Sibley's Blog" />

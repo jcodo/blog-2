@@ -3,8 +3,6 @@ import Link from 'next/link'
 import Subscribe from '../components/subscribe'
 import getPosts from '../lib/get-posts'
 
-const posts = getPosts()
-
 export default function Index() {
   return (
     <>
@@ -54,7 +52,7 @@ export default function Index() {
         <article className="mb-8">
           <h3 className="font-bold text-2xl">Recent Articles</h3>
           <ul className="list-disc list-inside underline text-lg">
-            {posts.map((post, index) => (
+            {getPosts().map((post, index) => (
               <li key={index}>
                 <Link href={post.href}>
                   <a className="underline">{post.title}</a>

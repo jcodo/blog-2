@@ -4,13 +4,13 @@
         <description><![CDATA[Jesse Sibley's Blog]]></description>
         <link>https://jessesibley.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 24 Jul 2020 14:44:54 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 27 Jul 2020 22:05:46 GMT</lastBuildDate>
         <atom:link href="https://blog.tailwindcss.com/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[JAMStack Isn't about Developer Experience]]></title>
-            <link>https://jessesibley.com/jamstack-isnt-about-developer-experience</link>
-            <guid isPermaLink="false">jamstack-isnt-about-developer-experience</guid>
-            <pubDate>Fri, 19 Jun 2020 23:00:00 GMT</pubDate>
+            <title><![CDATA[What on Earth Is Static Regneration?]]></title>
+            <link>https://jessesibley.com/what-on-earth-is-static-generation</link>
+            <guid isPermaLink="false">what-on-earth-is-static-generation</guid>
+            <pubDate>Sun, 26 Jul 2020 23:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>
