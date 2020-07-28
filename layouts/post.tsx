@@ -27,6 +27,7 @@ export default function Layout(frontMatter: PostFrontMatter) {
         <meta name="og:title" content={frontMatter.title} />
         <meta name="og:description" content={frontMatter.description} />
         <meta name="description" content={frontMatter.description} />
+        <title>{frontMatter.title}</title>
       </Head>
       <Header />
       <article className="px-4 container sm:max-w-2xl mx-auto mt-8">
