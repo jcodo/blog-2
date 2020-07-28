@@ -10,20 +10,18 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
   useEffect(() => {
+    Fathom.load('GLCOKXMM', {
+      excludedDomains: ['localhost'],
+    })
+
     function onRouteChangeComplete() {
       Fathom.trackPageview()
     }
 
-    if (process.env.NODE_ENV !== 'development') {
-      Fathom.load('GLCOKXMM', {
-        includedDomains: ['https://jessesibley.com'],
-      })
+    router.events.on('routeChangeComplete', onRouteChangeComplete)
 
-      router.events.on('routeChangeComplete', onRouteChangeComplete)
-
-      return () => {
-        router.events.off('routeChangeComplete', onRouteChangeComplete)
-      }
+    return () => {
+      router.events.off('routeChangeComplete', onRouteChangeComplete)
     }
   }, [])
 
