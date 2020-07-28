@@ -13,7 +13,7 @@ getPosts().forEach(({ title, description, href, published }) => {
     title,
     description,
     url: `https://jessesibley.com/${href}`,
-    date: new Date(published),
+    date: published,
     guid: href,
   })
 })

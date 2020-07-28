@@ -1,3 +1,4 @@
+import moment from 'moment'
 import Head from 'next/head'
 import Header from '../components/header'
 import Subscribe from '../components/subscribe'
@@ -34,7 +35,9 @@ export default function Layout(frontMatter: PostFrontMatter) {
             {frontMatter.title}
           </h1>
           <p className="flex items-center text-gray-600 mb-8">
-            <span>Published {frontMatter.published}</span>
+            <span>
+              Published {moment(frontMatter.published).format('DD MMMM, YYYY')}
+            </span>
           </p>
         </header>
         <section className="prose prose-lg border-b border-gray-200 pb-8 mb-8">

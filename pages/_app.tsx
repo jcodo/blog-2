@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       Fathom.trackPageview()
     }
 
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.NODE_ENV !== 'development') {
       Fathom.load('GLCOKXMM', {
         includedDomains: ['https://jessesibley.com'],
       })
