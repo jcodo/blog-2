@@ -1,7 +1,7 @@
 export default function Subscribe() {
   return (
     <section>
-      <h2 className="font-bold text-2xl text-gray-800">Newsletter</h2>
+      <h2 className="font-bold text-2xl text-gray-800 mb-2">Newsletter</h2>
       <p className="text-gray-700 mb-4">
         I'll let you know when I write another blog post and maybe keep you up
         to date with other interesting things I do online.

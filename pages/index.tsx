@@ -50,7 +50,7 @@ export default function Index() {
       </header>
       <main className="max-w-2xl mx-auto px-4 text-gray-800 leading-loose">
         <article className="mb-8">
-          <h3 className="font-bold text-2xl">Recent Articles</h3>
+          <h3 className="font-bold text-2xl mb-2">Recent Articles</h3>
           <ul className="list-disc list-inside underline text-lg">
             {getPosts().map((post, index) => (
               <li key={index}>
