@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "build:rss": "node .next/server/scripts/build-rss.js"
+    "build:rss": "yarn build && node .next/server/scripts/build-rss.js"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
