@@ -7,8 +7,8 @@ export default function Subscribe() {
     <section>
       <h2 className="font-bold text-2xl text-gray-800 mb-2">Newsletter</h2>
       <p className="text-gray-700 mb-4">
-        I'll let you know when I write another blog post and maybe keep you up
-        to date with other interesting things I do online.
+        Fancy subscribing to my newsletter? I'll write to you about once a week
+        when I make another blog post. No spam, I promise.
       </p>
       <form
         action="https://buttondown.email/api/emails/embed-subscribe/jessesibley"
