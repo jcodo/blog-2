@@ -1,3 +1,7 @@
+import * as Fathom from 'fathom-client'
+
+const trackClickSubscribe = '82TZLIQE'
+
 export default function Subscribe() {
   return (
     <section>
@@ -11,6 +15,7 @@ export default function Subscribe() {
         method="post"
         target="popupwindow"
         onSubmit={() => {
+          Fathom.trackGoal(trackClickSubscribe, 0)
           window.open('https://buttondown.email/jessesibley', 'popupwindow')
         }}
       >
