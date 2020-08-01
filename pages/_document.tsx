@@ -23,6 +23,10 @@ class MyDocument extends Document {
           <meta name="og:type" content="article" />
           <meta name="og:title" content={defaultTitle} />
           <meta name="og:description" content={defaultDescription} />
+          <link
+            rel="icon"
+            href={require('../public/favicon.png?resize&size=16')}
+          />
         </Head>
         <body>
           <div>

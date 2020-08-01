@@ -4,8 +4,15 @@
         <description><![CDATA[Jesse Sibley's Blog]]></description>
         <link>https://jessesibley.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 28 Jul 2020 12:40:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 01 Aug 2020 14:25:29 GMT</lastBuildDate>
         <atom:link href="https://blog.tailwindcss.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[JAMStack Isn't About Developer Experience]]></title>
+            <description><![CDATA[Why is there such a push towards JAMStack?]]></description>
+            <link>https://jessesibley.com/is-jamstack-just-a-phase</link>
+            <guid isPermaLink="false">is-jamstack-just-a-phase</guid>
+            <pubDate>Sat, 01 Aug 2020 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[What on Earth Is Static Regeneration?]]></title>
             <description><![CDATA[An overview of the new 'Incremental Static Generation' features in Next.js]]></description>
