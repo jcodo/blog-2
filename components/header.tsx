@@ -10,15 +10,15 @@ const links = [
     goal: 'UKOHHMQA',
   },
   {
-    href: 'https://github.com/chickencoder/',
-    goal: '3F9IGMSH',
-    label: 'GitHub',
-    external: true,
-  },
-  {
     href: 'https://twitter.com/jessethesibley/',
     goal: '1VTG1C9E',
     label: 'Twitter',
+    external: true,
+  },
+  {
+    href: 'https://github.com/chickencoder/',
+    goal: '3F9IGMSH',
+    label: 'GitHub',
     external: true,
   },
 ]
